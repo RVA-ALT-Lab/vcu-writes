@@ -7201,6 +7201,12 @@ h1, h2, h3, h4, h5 {
   font-family: 'Roboto Slab', serif;
   font-weight: 700; }
 
+h1 {
+  font-size: 2.2em; }
+
+h2 {
+  margin-top: 15px; }
+
 /*nav bar */
 .navbar-vcu {
   background-color: #f8b800; }
@@ -7235,7 +7241,7 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 20px;
   padding-left: 10px; }
 
-.entry-content i {
+.panel-title i {
   font-size: .8em;
   padding: 0 10px;
   color: #656262;
@@ -7244,6 +7250,16 @@ h1, h2, h3, h4, h5 {
 /*footer*/
 #wrapper-footer-full, #wrapper-static-hero {
   background-color: #fff; }
+
+blockquote {
+  border: 1px solid;
+  padding: 7px; }
+
+blockquote > blockquote {
+  border: none; }
+
+.entry-content blockquote h3 {
+  margin-top: 5px; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
