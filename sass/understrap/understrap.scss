@@ -145,6 +145,16 @@ h2 {
   margin-top: 15px;
 }
 
+.btn-primary {
+  background-color: #666;
+  border-color: #666;
+}
+
+.btn-primary:hover {
+  background-color: #000;
+  border-color: #000;
+}
+
 /*nav bar */
 .navbar-vcu {
   background-color: #f8b800;
@@ -152,6 +162,64 @@ h2 {
 
 .navbar-brand {
   color: #181717;
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+} 
+
+.search-icon {
+    background: transparent;
+    border: none;
+    font-size: 1.2em;
+    -webkit-transition: all .3s;
+    /* Safari */
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.search-icon:hover {
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
+#search-box-dropdown {
+  position: relative;
+  left: 0;
+  top: 0;
+  border-top: none;
+  background-color: transparent;
+}
+
+#search-box-dropdown.show {
+  padding: 0;   
+}
+
+#header-search {
+  height: 25px;    
+  margin-bottom: -6px;
+  display: inline-block;
+}
+
+#header-search {
+  background-image: url(../imgs/icon-search.svg);
+}
+
+.assistive-text {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  overflow: hidden;
+  top: -10px;
+}
+
+#navbarNavDropdown {
+  justify-content: flex-start;
 }
 
 /*main body*/
@@ -210,4 +278,22 @@ blockquote>blockquote {
 
 .entry-content blockquote h3 {
   margin-top: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+      .navbar-expand-md>.container, .navbar-expand-md>.container-fluid {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+      .navbar-toggler-icon {
+        background-image: url(../imgs/icon-menu.svg);
+    }
+
+      .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+        background-image: url(../imgs/icon-x2.svg);
+    }
 }
